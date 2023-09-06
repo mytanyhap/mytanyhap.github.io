@@ -1,0 +1,18 @@
+body {
+    background-color: bisque;
+}
+
+h1,h2 {
+    font-family: "Karma", sans-serif;
+    color: black;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+nav > a {
+    color:aliceblue;
+}
