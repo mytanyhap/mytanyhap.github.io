@@ -48,7 +48,7 @@
     <tagline>"Just Keep swimming"</tagline>
     <p>
         Copyright 
-        <a href="https://mytanyhap.github.io/tanyhadesigns.html" target="_blank"> Tanyha Designs </a>
+        <a href="https://mytanyhap.github.io/tanyhadesigns.com" target="_blank"> Tanyha Designs </a>
         @ 2023
     </p>
 </footer>
