@@ -1,35 +1,90 @@
 body {
-    background-color:indianred;
+ background-image: url("https://wallpaperaccess.com/full/5403325.jpg");
 }
 
 nav {
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  color:#800000;
+}
+
+h3{
+  color: #e71d36;
+  font-family:kanit ;
+}
+
+th{
+  text-align: center;
+  color:#cdcbd6;
+  background-color: #596235;
+}
+
+legend{
+color: #cdcbd6;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  color: #cdcbd6;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+  font-size: medium;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+button {
+  box-shadow: none;
+  color: whitesmoke;
+}
+
+h1,
+h2 {
+  font-family: Kanit;
+  color: rgb(243, 155, 236);
+  text-align: center;
+  font-size: 30px;
+}
+
+.label{
+  color: violet;
+  box-shadow: #596235;
+}
+
+p {
+  color:#596235;
+  text-align: center;
+  font-family: karma;
+  font-size: 18px;
+  
+}
+
+li {
+  color: rgb(188, 177, 174);
+}
+
+footer {
+  color:azure;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
 }
 
-h1,h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:black;
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  p {
-    text-align: center;
-    font-family: karma;
-    font-size: 17px;
-  }
-  li {
-    color:rgb(37, 16, 11);
-  }
-
-  footer{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-  }
-
-nav > a {
-    color:whitesmoke;
+nav>a {
+  color: whitesmoke;
 }

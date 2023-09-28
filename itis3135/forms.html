@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<head>
+    <h1>Tee Peoples's Tired Panther || ITIS3135 || Forms</h1>
+    <nav>
+        <a href="./">Homepage</a>
+        ||
+        <a href="introduction.html">Introduction</a>
+        ||
+        <a href="contract.html">Contract</a>
+        ||
+        <a href="forms.html">Forms</a>
+        ||
+        <a href="tables.html">Tables</a>
+        ||
+        <a href="./">Back to the main site</a>
+    </nav>
+
+</nav>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <div class="main-block">
+        <h2>Registration</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <p>
+                    <label>
+                        Prefix
+                        <br />
+                        <select name="prefix">
+                            <option>--None--</option>
+                            <option>Mr.</option>
+                            <option>Ms.</option>
+                            <option>Mrs.</option>
+                            <option>Dr.</option>
+                            <option>Prof.</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label> Name: <input name="Name" /></label>
+                </p>
+                <p>
+                    <label>Phone number: <input name="phoneNumber" /></label>
+                </p>
+                <p>
+                    Gender :
+                    <label><input type="radio" name="gender" value="male" />
+                        Male
+                    </label>
+                    <label><input type="radio" name="gender" value="female" />
+                        Female
+                    </label>
+                    <label><input type="radio" name="gender" value="prefer not to say" />
+                        Prefer not to say
+                    </label>
+                    <label><input type="radio" name="gender" value="non-binary" />
+                        Non-binary
+                    </label>
+                </p>
+                <p>
+                    <label>Email:<input type="email" name="email" />
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
