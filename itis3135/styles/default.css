@@ -12,12 +12,33 @@ nav {
 h3{
   color: #e71d36;
   font-family:kanit ;
+  text-align: center;
+}
+
+label{
+  color:aliceblue;
+  font-family: kanit;
+
+}
+
+button{
+  color: black;
+  font-family: kanit;;
+}
+
+input{
+  color:black;
+  font-family:kanit;
 }
 
 th{
   text-align: center;
   color:#cdcbd6;
   background-color: #596235;
+}
+
+figcaption{
+  color: #cdcbd6;
 }
 
 legend{
@@ -67,15 +88,25 @@ h2 {
 }
 
 p {
-  color:#596235;
+  color:#c797a9;
   text-align: center;
   font-family: karma;
-  font-size: 18px;
+  font-style: bold;
+  font-size: 20px;
   
+  font-family: helvetica;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 li {
   color: rgb(188, 177, 174);
+  text-align: left;
+  font-family: 'Libre Caslon Condensed 500', sans-serif;
+}
+
+.budget{
+  color:darkred
 }
 
 footer {
@@ -83,6 +114,12 @@ footer {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
+}
+.lego{
+  font-family: 'LEGO BRIX', sans-serif;
+  color:whitesmoke;
+  font-size: x-large;
+
 }
 
 nav>a {
