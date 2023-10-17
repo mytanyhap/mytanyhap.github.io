@@ -1,5 +1,6 @@
 body {
  background-image: url("https://wallpaperaccess.com/full/5403325.jpg");
+ text-align: center;
 }
 
 nav {
@@ -10,20 +11,27 @@ nav {
 }
 
 h3{
-  color: #e71d36;
+  color: violet;
   font-family:kanit ;
   text-align: center;
 }
 
-label{
-  color:aliceblue;
-  font-family: kanit;
-
+main {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
+
+label{
+  color:rgb(48, 146, 232);
+  font-family: kanit;
+}
+
+
 button{
-  color: black;
-  font-family: kanit;;
+  color:black;
+  font-family: kanit;
+  box-sizing: border-box;
 }
 
 input{
@@ -66,12 +74,7 @@ table, th, td {
   padding: 10px;
   font-size: medium;
   border-collapse: collapse;
-  text-align: center;
-}
-
-button {
-  box-shadow: none;
-  color: whitesmoke;
+ 
 }
 
 h1,
