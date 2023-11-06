@@ -1,12 +1,77 @@
+ @import url('https://fonts.cdnfonts.com/css/courgette');
+ @import url('https://fonts.cdnfonts.com/css/alegreya-sc');
+ @import url('https://fonts.cdnfonts.com/css/domine');
+                
+                
+                
 body {
  background-image: url("https://wallpaperaccess.com/full/5403325.jpg");
- text-align: center;
+
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav-category {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-category:hover .dropdown {
+  display: block;
+}
+
+.nav-category h3 {
+  color: purple;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-category h3:hover {
+  color: #60a561;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.dropdown a:hover {
+  background-color: #b2a198;
+}
+
+/* Style for all footer elements on the page */
+footer img {
+  margin-top: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 575px) {
+  img {
+    max-width: 100%;
+  }
+}
+
+footer a:hover, header a:hover {
+  color: black;
+  font-family: 'Alegreya SC', sans-serif;
+                                                
 }
 
 nav {
   text-align: center;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 15px;
+                                         
+  font-size: 20px;
   color:#800000;
 }
 
@@ -59,7 +124,7 @@ color: #cdcbd6;
 }
 
 td{
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Courgette', sans-serif;   
   text-align: left;
   padding-left: 20px;
   padding-right: 10px;
@@ -68,6 +133,7 @@ td{
 }
 
 table, th, td {
+  font-family: 'Courgette', sans-serif;   
   border: 1px solid white;
   border-collapse: collapse;
   text-align: center;
@@ -79,7 +145,8 @@ table, th, td {
 
 h1,
 h2 {
-  font-family: Kanit;
+  font-family: 'Alegreya SC', sans-serif;
+                                                
   color: rgb(243, 155, 236);
   text-align: center;
   font-size: 30px;
@@ -93,12 +160,8 @@ h2 {
 p {
   color:#c797a9;
   text-align: center;
-  font-family: karma;
-  font-style: bold;
-  font-size: 20px;
-  
-  font-family: helvetica;
-  font-size: 20px;
+  font-family: 'Domine', sans-serif;
+  font-size: 15px;
   text-decoration: none;
 }
 
@@ -115,16 +178,49 @@ li {
 footer {
   color:azure;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Domine', sans-serif;
+                                                
   font-size: 15px;
 }
+
 .lego{
   font-family: 'LEGO BRIX', sans-serif;
   color:whitesmoke;
   font-size: x-large;
-
 }
 
 nav>a {
   color: whitesmoke;
+}
+
+@media (min-width: 576px) {
+  body {
+      margin: 10px;
+  }
+
+  img {
+      max-width: 90%;
+      height: auto;
+  }
+
+  header {
+      text-align: center;
+      padding: 10px;
+  }
+
+  header .nav {
+      margin-top: 10px;
+      list-style: none;
+  }
+
+  header .nav li {
+      display: inline;
+      margin-right: 10px;
+  }
+
+  footer {
+      padding: 10px;
+      text-align: center;
+  }
+
 }

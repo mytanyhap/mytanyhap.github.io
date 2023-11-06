@@ -6,80 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/default.css">
     <title> Tee Peoples's Tired Panther || ITIS3135 </title>
-
+    <script src="scripts/defaultscripts.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>
-            Tee Peoples's Tired Panther || ITIS3135
-        </h1>
-        <nav>
-            <a href="./">Homepage</a>
-            ||
-            <a href="introduction.html">Introduction</a>
-            ||
-            <a href="contract.html">Contract</a>
-            ||
-            <a href="forms.html">Forms</a>
-            ||
-            <a href="tables.html">Tables</a>
-            ||
-            <a href="websiteevaluations.html"> Website Evaluations</a>
-            ||
-            <a href="firstscripts.html">FirstScripts Webpage</a>
-        </nav>
-        <nav class="2nd">
-            <a href="stuff/unlike@nyThind.htm"> Crappy Webpage</a>
+        <h2> Tee Peoples's Tired Panther || ITIS3135 </h2>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
-        <h2> Tee Peoples's Tired Panther || ITIS3135 </h2>
-        <h3 id="date">This date is: Sun Oct 08 2023 22:56:41 GMT-0400 (Eastern Daylight Time)</h3>
-        <label for="name"> Please Enter Your Name:</label>
-        <input id="name">
-        <label for="feeling"> Please Enter Feelings:</label>
-        <input id="feeling">
-        <button onclick="getGreeting()"> Click Here For Greeting </button>
-        <p id="getGreeting"> </p>
-        <label for="number"> Please Enter Your Favorite Number:</label>
-        <input id="number" type="number" min="-10" max="10">
-        <button onclick="getNumber()"> Click Here For Your Polygon: </button>
-        <p id="getNumber"> </p>
-        <button onclick="GetJoke()"> Click Here For A Joke:</button>
-        <button onclick="GetSign()"> Click Here For A Sign:</button>
-        <button onclick="GetAnimal()"> Click Here For An Animal:</button>
-        <button onclick="GetShoe()"> Click Here For A Shoe:</button>
+        <h1>Welcome to TanyhaDesigns!</h1>
+        <h3 id="greetUser"></h3>
+
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput" placeholder="Your name">
+
+        <label for="moodInput">How are you feeling?</label>
+        <input type="text" id="moodInput" placeholder="Your mood">
+
+        <button onclick="greetUser()">Submit</button>
+
+        <label for="numberInput">Enter your favorite number (0 to 10):</label>
+        <input type="number" id="numberInput" min="0" max="10">
+        <button onclick="findPolygon()">Find Polygon</button>
+        
+        <button onclick="generateAnimalSound()">Generate Animal Sound</button>
+        <button onclick="calculateMascotAge()">Calculate Mascot's Age</button>
+        <button onclick="offerMascotDance()">Offer Mascot Dance</button>
+        <button onclick="predictMascotFuture()">Predict Mascot's Future</button>
     </main>
     <br>
     <footer>
-        <a href="https://webpages.charlotte.edu/tpeople5/">CLT web</a>
-        ||
-        <a href="https://github.com/mytanyhap">Github</a>
-        ||
-        <a href="https://github.com/mytanyhap/mytanyhap.github.io">Github.io</a>
-        ||
-        <a href="https://www.freecodecamp.org/Tanyhacodes">freeCodeCamp</a>
-        ||
-        <a href="https://www.codecademy.com/profiles/TeeCodesiThink">Codeacademy</a>
-        ||
-        <a href="https://www.linkedin.com/in/tee-peoples-19677328a">LinkedIn</a>
-        </a>
-        <p>
-            Page built by
-            <a href="https://mytanyhap.github.io/tanyhadesigns.html"> Tanyha Designs </a>
-            @ 2023 
-        </p>
-        <p class="tagline">Just keep swimming</p>
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img style="border:0;width:88px;height:31px"
-                src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML">
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
-                alt="Valid CSS">
-        </a>
-       <script src="scripts/HTMLInclude.min.js"></script>
-       <script src="scripts/defaultscripts.js"></script>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
        </footer>
 </body>
 </html>

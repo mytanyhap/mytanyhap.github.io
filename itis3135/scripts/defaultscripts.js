@@ -1,53 +1,93 @@
-function displayCurrentDateTime() {
-    const dateTimeElement = document.getElementById('dateTime');
-    const now = new Date();
-    const options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit'
-    };
-    dateTimeElement.innerText = now.toLocaleString('en-US', options);
+function greetUser() {
+  const name = document.getElementById("nameInput").value;
+  const mood = document.getElementById("moodInput").value;
+
+  const dateTime = new Date();
+  const formattedDateTime = `${getDayOfWeek(dateTime)}, ${getFormattedTime(dateTime)}`;
+
+  const greeting = `Today is ${formattedDateTime}.\n\nThe tired panther's welcomes you, ${name}!\nWe're glad you are doing ${mood}!`;
+
+  document.getElementById("greeting").textContent = greeting;
 }
-document.addEventListener('DOMContentLoaded', (event) => {
-    displayCurrentDateTime();
-})
-function greet() {
-    inputName = document.getElementById('name').value;
-    inputMood = document.getElementById('mood').value;
-    greetingElement = document.getElementById('greeting');
-    greetingElement.innerText = "Welcome, " + inputName + ". You're feeling " + inputMood + " today?";
+function findPolygon() {
+  const number = parseInt(document.getElementById("numberInput").value);
+  const absoluteNumber = Math.abs(number);
+  const roundedNumber = Math.round(absoluteNumber);
+
+  const polygons = [
+    "henagon", "digon (bigon)", "triangle", "quadrilateral", "pentagon",
+    "hexagon", "heptagon", "octagon", "enneagon", "decagon"
+  ];
+
+  if (roundedNumber >= 0 && roundedNumber < polygons.length) {
+    alert(`The polygon with ${roundedNumber} sides is called a ${polygons[roundedNumber]}.`);
+  } else {
+    alert("Invalid input. Please enter a number between 0 and 9.");
+  }
 }
-function showPolygon() {
-    favNumberElement = document.getElementById('fnumber');
-    let number = Math.round(Math.abs(favNumberElement.value));
-    let polygon;
-    switch (number) {
-        case 2: polygon = "Digon"; break;
-        case 3: polygon = "Triangle"; break;
-        case 4: polygon = "Quadrilateral"; break;
-        case 5: polygon = "Pentagon"; break;
-        case 6: polygon = "Hexagon"; break;
-        case 7: polygon = "Heptagon"; break;
-        case 8: polygon = "Octagon"; break;
-        case 9: polygon = "Nonagon"; break;
-        case 10: polygon = "Decagon"; break;
-        default: polygon = "Many sided polygon";
-    }
-    alert(polygon);
+
+
+
+
+function getDayOfWeek(date) {
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  return daysOfWeek[date.getDay()];
 }
-function seeYaLater() {
-    alert("Alligator");
+
+function getFormattedTime(date) {
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const ampm = hours >= 12 ? 'pm' : 'am';
+  const formattedHours = hours % 12 || 12;
+  const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+  return `${formattedHours}:${formattedMinutes}${ampm}`;
 }
-function dumbJoke() {
-    alert("What do you call an alligator holding a compass? A navigator");
+
+// Function 1: Generate a Random Animal Sound
+function generateAnimalSound() {
+  const animalSounds = [
+      "Moo!",
+      "Woof!",
+      "Meow!",
+      "Quack!",
+      "Oink!",
+      "Baa!",
+      "Roar!",
+      "Hoot!",
+      "Ribbit!",
+      "Squeak!"
+  ];
+
+  const randomSound = animalSounds[Math.floor(Math.random() * animalSounds.length)];
+  alert(`Your Tired Panther mascot says: "${randomSound}"`);
 }
-function howLong() {
-    alert("Half its length is an alligator's tail but they can be up to half a ton (1000 pounds)");
+
+// Function 2: Calculate the Age of Your Mascot
+function calculateMascotAge() {
+  const currentYear = new Date().getFullYear();
+  const mascotBirthYear = 2023; // Replace with your mascot's birth year
+  const mascotAge = currentYear - mascotBirthYear;
+
+  alert(`Our beloved Tired Panther mascot is ${mascotAge} years old!`);
 }
-function joke2() {
-    alert("Alligators can grow up to 15 feet...usually they just grow 4 of them.");
+
+// Function 3: Offer a Custom Mascot Dance
+function offerMascotDance() {
+  const danceStyles = ["Hip Hop", "Breakdance", "Salsa", "Ballet", "Robot", "Moonwalk"];
+  const randomDance = danceStyles[Math.floor(Math.random() * danceStyles.length)];
+
+  alert(`Would you like to see our mascot perform the ${randomDance} dance?`);
+}
+
+// Function 4: Predict Your Mascot's Future
+function predictMascotFuture() {
+  const futureEvents = [
+      "Our mascot will win a dance competition!",
+      "Our mascot will become a famous movie star!",
+      "Our mascot will travel the world and meet other famous animals!",
+      "Our mascot will start a successful animal-themed business!"
+  ];
+
+  const randomEvent = futureEvents[Math.floor(Math.random() * futureEvents.length)];
+  alert(`Here's a glimpse into the future of our Tired Panther mascot:\n${randomEvent}`);
 }
