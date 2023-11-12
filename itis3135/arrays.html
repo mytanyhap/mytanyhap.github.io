@@ -8,8 +8,105 @@
     <link href="https://fonts.cdnfonts.com/css/courgette" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/alegreya-sc" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/domine" rel="stylesheet">
-                          
+  
+   <style>
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    table, th, td {
+        border: 1px solid #282626;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+  }
+
+  tr:nth-child(odd) {
+      background-color: #ffffff;
+  }
+  /* Add this CSS to your default.css or in a <style> tag within your HTML */
+   /* Add this CSS to your default.css or in a <style> tag within your HTML */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.label {
+  width: 100px; /* Adjust the width as needed */
+}
+
+.input-field {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Add rounded borders */
+}
+
+.input-button {
+  background-color: blue;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px; /* Add rounded borders */
+  cursor: pointer;
+}
+
+.input-button:hover {
+  background-color: #0066cc;
+}                          
+</style>
 </head>
 
+<body>
+  <div data-include="components/header.html"></div>
+  <main>
+    <h1>Employee Salaries</h1>
+
+    <div class="container">
+      <label for="nameInput" class="label">Employee Name:</label>
+      <input type="text" id="nameInput" class="input-field">
+      <label for="salaryInput" class="label">Salary:</label>
+      <input type="text" id="salaryInput" class="input-field">
+      <button id="addButton" class="input-button">Add</button>
+  </div>
+  
+  
+
+    <div>
+        <h2>Employee List</h2>
+        <table id="results_table">
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="results">
+        <h2>Results</h2>
+        <p>Average Salary: <span id="averageSalary"></span></p>
+        <p>Highest Salary: <span id="highestSalary"></span></p>
+    </div>
+  </main>
+  <div data-include="components/footer.html"></div>
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/arrays.js"> </script>
+</body>
+</html>
 
 </html>
