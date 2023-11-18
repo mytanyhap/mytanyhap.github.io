@@ -14,6 +14,8 @@
         @import url('https://fonts.cdnfonts.com/css/homoarakhn');
         @import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
 
+
+
         body,
         h1,
         h2,
@@ -25,7 +27,7 @@
             text-align: center;
         }
 
-        h2{
+        h2 {
             color: whitesmoke;
         }
 
@@ -37,11 +39,14 @@
             background-size: cover;
         }
 
+       
         img,
         figcaption,
         figure {
             font-family: 'JetBrains Mono NL', sans-serif;
         }
+
+
 
         header {
             background-color: #000000;
@@ -51,10 +56,15 @@
         }
 
         nav {
-            background-color:black;
+            background-color: black;
             color: #F9F4F5;
             text-align: center;
-            padding: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 15px;
+
         }
 
         nav a {
@@ -93,6 +103,7 @@
             text-decoration: none;
             border: 0.2em solid aqua;
             padding: 0.5em 1em;
+            transition: all 0.2s ease;
 
             &::before {
                 content: "";
@@ -170,6 +181,7 @@
             text-decoration: none;
             border: 0.2em solid rgb(255, 0, 119);
             padding: 0.5em 1em;
+            transition: all 0.2s ease;
 
             &::before {
                 content: "";
@@ -218,19 +230,20 @@
     </header>
     <main class="backgroundimage">
         <nav>
-            <button onclick="toggleSection('aboutMe')" id="one" class="buttons one">Gaming</button>
-            <button onclick="toggleSection('Apex Legends')" id="two" class="buttons two">Apex Legends</button>
-            <button onclick="toggleSection('Spider Man')" id="three" class="buttons three">Spiderman</button>
-            <button onclick="toggleSection('For Honor')" id="four" class="buttons four">For Honor</button>
+            <input type="button" class="buttons one" onclick="location.href='myHobbysite.html';" value="aboutMe" />
+
+            <button onclick="toggleSection('Apex Legends')" class="buttons two">Apex Legends</button>
+            <button onclick="toggleSection('Spider-Man')" class="buttons three">Spider-Man</button>
+            <button onclick="toggleSection('For Honor')" class="buttons four">For Honor</button>
         </nav>
-        <section>
+        <br>
+        <section id="aboutMe" style="display: flex;">
             <h2>The top 3 games I play mostly</h2>
             <p>This website is my way of sharing my experiences, tips, and insights with fellow gamers.
                 Feel free to explore and learn more about my gaming journey.</p>
         </section>
 
-    
-        <section id="Apex" class="secColor Apex photo" style="display: block;">
+        <section id="Apex Legends" style="display: block;">
             <h2>Apex Legends</h2>
             <p>Apex Legends: Apex Legends is my go-to choice for high-energy gaming. It's all about intense battles in a
                 vast arena.
@@ -239,24 +252,28 @@
                 It's fast-paced and super addictive to me especially ranked. I usually main Bangalore, Mirage and
                 Horizon.
             </p>
-            <img src="images/apex_art.png" alt="Image Apex Legends" style="width: 400px;">
-            <figcaption>Just the general loading screen for the game.</figcaption>
+            <figure>
+                <img src="images/apex_art.png" alt="Image Apex Legends" style="width: 200px;">
+                <figcaption>Just the general loading screen for the game.</figcaption>
+            </figure>
             <br>
         </section>
-        
-        <section id="Spiderman" class="secColor Spiderman hide" style="display: block;">
+
+        <section id="Spider-Man" style="display: block;">
             <h2>Spiderman</h2>
             <p> Spider-Man: If you've ever dreamt of being your friendly neighborhood superhero. It's a blast swinging
                 through the streets of New York City,
                 beating up bad guys, and feeling like a total badass. The story is gripping, the combat is exhilarating,
                 and the graphics are stunning.Insomniac Games nailed it, and I love every moment I spend in Spidey's
                 shoes.</p>
-            <img src="images/spidey_art.png" alt="Spidey Pic" style="width: 400px;">
-            <figcaption>Pic I took myself when the first new SpiderMan came out back in 2018.</figcaption>
-
+            <figure>
+                <img src="images/spidey_art.png" alt="Spidey Pic" style="width: 200px;">
+                <figcaption>Pic I took myself when the first new SpiderMan came out back in 2018.</figcaption>
+            </figure>
+            <br>
         </section>
-        <br>
-        <section id="For Honor" class="secColor For Honor hide" style="display: block;">
+
+        <section id="For Honor" style="display: block;">
             <h2>For Honor</h2>
             <p>
                 For Honor is all about skill and strategy in epic medieval battles.
@@ -267,7 +284,7 @@
                 go-to's.
             </p>
             <figure>
-                <img src="images/forhonor_wukong.png" style="width: 400px;">
+                <img src="images/forhonor_wukong.png" style="width: 200px;">
                 <figcaption>Pic of what wukong looks like</figcaption>
             </figure>
         </section>
