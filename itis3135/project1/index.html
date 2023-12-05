@@ -1,156 +1,149 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/project.css"/>
+    <link
+      rel="stylesheet"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <nav class="nav bar">
+   
+    <a href="index.html">
+        <div class="left-section">
+            <img class="logo" src="images/lujoslogo.png" alt="LuJo's Transportation LLC" width="100px">
+        </div>
+    </a>
+    <h1>LuJo's Transportation LLC</h1>
+    <a href= "index.html"> Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="contactus.html">Where to contact us</a>
+</nav>
+  <body>
+      </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tee Peoples's Tired Panther || ITIS3135 || All about Tee </title>
-    <link rel="stylesheet" href="styles/default.css">
-</head>
+      <div class="container"></div>
 
-<body>
-    <header>
-        <div data-include="components/header.html"></div>
-    </header>
-    <main>
-        <h2> Transportation website based on my mother's business</h2>
-        <ol>
-            <li>
-                <h3>Project Overview:
+      <section id="hero">
+        <h2>Experience tranquility </h2>
+        <a><strong>For inquires, please fill out the info below</strong></a>
+        <form id="form" action="">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Get Started" class="btn" />
+        </form>
+      </section>
 
-                </h3>
-                <p>This is a transportation company created by my mom, she needs a website in order to help broaden her
-                    ability to get to people that may need some form of transportation.
-                    She needs a better and bigger platform and that all starts with a good website.
-                    Right now, she's not using anything at all.
-                </p>
-            </li>
-            <h2>Intended Users of the Website:</h2>
-            <ul>
-                <li>Customers: Mainly aimed at disabled and senior citizens that can't necessarily get to where they
-                    need to. But overall, anyone can purchase a transportation service.</li>
-                <li>My mom would/is the site owner, responsible for it. </li>
-            </ul>
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Premium Vehicles</h2>
+              <p>
+                Our vehicles are kept in top and prestine condition as to provide the most comfortable riding 
+                experience as possible.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>Fast Pickup</h2>
+              <p>
+                Here at LuJos' we make sure we are on time and promptly
+                in our vehicles, whilst still ensuring safety to all.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Quality Assurance</h2>
+              <p>
+                We make sure you recieve top notch services, in which you enjoy your 
+                entire experience whilst in our luxury vehicles.
+              </p>
+            </div>
+          </div>
+        </section>
 
-            <li>
-                <h3>Wireframe:
+        <section id="pricing">
+          <div class="product" id="Ram">
+            <div class="level"></div>
+            <h2>The Ram Promaster, Known as our standard vehicle</h2>
+            <img
+            id="header-img"
+            src="images/rampromaster.png"
+            alt="The Promaster"
+            width="300 px";
+            />           
+            <ol>
+              <li>Can seat up to 6.</li>
+              <li>Includes luxury plush seats.</li>
+              <li>Two digital home theater displays.</li>
+              <li>Rates start at <b>$25</b> hour,  or our a flat rate usage of <strong>$75</strong></li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        <br>
+          <div class="product" id="Nissan">
+            <div class="level"></div>
+            <h2>The Nissan NV passanger, Known as our glorius middle</h2>
+            <img
+            id="header-img"
+            src="images/nissannv.png"
+            alt="The NV"
+            width="300 px";
+            />     
+            <ol>
+                <li>Can seat up to 12.</li>
+                <li>Includes 12 Rear passenger heating and cooling vents.</li>
+                <li>Two 120-volt DC power outlets.</li>
+                <li>Rates start at <b>$40</b> hour, or our a flat rate usage of <strong>$90</strong></li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
 
-                </h3>
-                <img src="images/SiteLayout.png">
+          <br>
+          <div class="product" id="Mercedes">
+            <div class="level"></div>
+            <h2>The Mercedes Sprinter Passanger, Known as our prized possession</h2>
+            <img
+            id="header-img"
+            src="images/mercedessprinter.png"
+            alt="The Sprinter"
+            width="300 px";
+            />     
+            <ol>
+              <li>Can seat up to 15.</li>
+              <li>Includes a MBUX Multimedia System with 10.25″ touchscreen</li>
+              <li>It has active Lane-Keeping Assist, Blind Spot Assist Mirror, Attention Assist; just to name a few key features</li>
+              <li>Rates start at <b>$55</b> hour, or our a flat rate usage of <strong>$150</strong></li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
 
-            </li>
-            <li>
-                <h3> Site Map:
-                    <p>
+   <br>
 
+      </body>
+      
 
-                        <img src="images/siteMap.png">
-                    </p>
-                </h3>
-            </li>
-            <li>
-                <h3> Page Design:
-
-                </h3>
-                <ul>
-                    <li>
-                        <h4> (Home) LuJo's Transportation Inc. :
-                        </h4>
-                        <p>
-                            The name of this website is called LuJo's Transportation Inc.
-                        </p>
-                    </li>
-                    <li>
-                        <h4> Requirements (Information Resources):
-                        </h4>
-                        <p>
-                            The section called, "Meet Our Vans" is a representation of the Information Resources page
-                            for this website. The purpose of this section of the website is to provide the users with
-                            clear options about the numerous vans that we offer
-                            regarding documentation for the process of which we ensure a reliable transportation experience, drivers need a valid license, clean record,
-                            and compliance with traffic laws. Vehicles must undergo regular maintenance, and drivers
-                            must pass background checks and customer service training. Punctuality, courtesy, and
-                            efficiency are essential. 
-                            There will be data fields,
-                            buttons, and/or actions on this page.
-
-                        </p>
-                    </li>
-
-                    <li>
-                        <h4> Transportation (Services):
-
-                        </h4>
-                        <p>
-                            This section is called, "Services." This particular section will serve as a purpose for the
-                            website because
-                            it will offer clarification towards the user on the webstie by explaining specifically what
-                            Sagittarius Peoples (the website owner)
-                            is willing to do and provide for each client. Moreover, according to the client's requests
-                            there will be
-                            prices listed for them
-                            along with the estimated time to complete each request. Hence, there will be no data fields,
-                            buttons, hyperlinks, etc. inlcuded within this page.
-                        </p>
-
-                    </li>
-                    <li>
-                        <h4> Contact Me (Contact):
-
-                        </h4>
-                        <p>
-                            This "Contact Me" page is purpopsly implemented on this website to be used as an advantage
-                            for the users
-                            to contact the tax service provider for any possible questions and/or concerns to be
-                            answered.
-                            This section will include the email and phone number of Sagittarius Peoples. Furthermore,
-                            availability hours
-                            throughout the days of the week will be listed to ensure the availability of Sagittarius
-                            Peoples.
-                            Consequently, there will be no need for data fields, buttons, hyperlinks, etc. within this
-                            section of the website.
-
-                        </p>
-                    </li>
-                    <li>
-                        <h4> About Me (About Me):
-
-                        </h4>
-                        <p>
-                            This section of this website is called, "About Me." This provides clear and consise
-                            information on my background
-                            on my own experience filiing and providing transportation needs. The
-                            purpose for the users on this website to know more about Sagittarius Peoples. Therefore,
-                            there
-                            will be no need for entry of
-                            data fields, buttons, hyperlinks, etc. within this section of the website.
-
-                        </p>
-                    </li>
-
-
-            </li>
-            </ul>
-
-            </li>
-            <li>
-                <h4> Dynamic Functionality on the website:
-
-                </h4>
-                <p>
-                    This section will load the photo gallery, nav & footer bar, and the information resources aspects of
-                    the
-                    website.
-                </p>
-            </li>
-        </ol>
-
-    </main>
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
-    <script src="scripts/HTMLInclude.min.js">
-    </script>
-</body>
-
+        <footer>
+          </ul>
+          <span>Copyright 2023, LuJo's Transportation LLC</span>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
